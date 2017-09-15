@@ -23,7 +23,8 @@
         {"input": "assets/pink-bluegrey.css", "lazy": true},
         {"input": "assets/deeppurple-amber.css", "lazy": true},
         {"input": "assets/indigo-pink.css", "lazy": true},
-        {"input": "assets/purple-green.css", "lazy": true}
+        {"input": "assets/custom-themes/converge.scss", "lazy": true}
+
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

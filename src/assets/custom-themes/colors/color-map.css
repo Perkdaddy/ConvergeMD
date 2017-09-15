@@ -1,0 +1,315 @@
+// Defines our core color maps
+// Material Design pallets ($md-base-colors-map) is generated off of 7 Verge Health brand colors
+@import 'color-constants';
+
+// Extend foundation colors
+$primary-color: $blue;
+$secondary-color: $dark-gray;
+$success-color: $green;
+$green-color: $dark-green;
+$warning-color: $gold;
+$alert-color: $red;
+$subnav: smart-scale($primary-color, 5%, 40%);
+$muted-gray: lighten($secondary-color, 20% *2);
+$danger: $red;
+$blue-green: $light-blue-green;
+
+$base-colors-map: (
+    amber: $gold,
+    aqua: $aqua,
+    black: $black,
+    blue-green: $light-blue-green,
+    blue-silver: $blue-silver,
+    blue: $blue,
+    dark-blue: $dark-blue,
+    dark-gray: $dark-gray,
+    dark-green: $dark-green,
+    dark-orange: $dark-orange,
+    gray: $gray,
+    green: $green,
+    light-aqua: $light-aqua,
+    light-blue: $light-blue,
+    light-gray: $light-gray,
+    light-green: $green,
+    medium-gray: $medium-gray,
+    orange: $orange,
+    purple: $urple,
+    red: $red,
+    skyblue: $skyblue,
+    teal: $teal,
+    white: $white,
+    yellow: $gold
+);
+
+//used in material design functions
+/* For use in src/lib/core/theming/_palette.scss */
+// Color palettes from the Material Design spec.
+// See https://www.google.com/design/spec/style/color.html
+//
+// Contrast colors are hard-coded because it is too difficult (probably impossible) to
+// calculate them. These contrast colors are pulled from the public Material Design spec swatches.
+// While the contrast colors in the spec are not prescriptive, we use them for convenience.
+
+$md-vhblue: (
+    50 : #e0eef3,
+    100 : #b3d5e0,
+    200 : #80b9cc,
+    300 : #4d9db7,
+    400 : #2688a7,
+    500 : #007398,
+    600 : #006b90,
+    700 : #006085,
+    800 : #00567b,
+    900 : #00436a,
+    A100 : #99d3ff,
+    A200 : #66bdff,
+    A400 : #33a7ff,
+    A700 : #1a9cff,
+    contrast: (
+        50 : $black,
+        100 : $black,
+        200 : $black,
+        300 : $black,
+        400 : $white,
+        500 : $white,
+        600 : $white,
+        700 : $white,
+        800 : $white,
+        900 : $white,
+        A100 : $black,
+        A200 : $black,
+        A400 : $black,
+        A700 : $black,
+    )
+);
+
+$md-vhaqua: (
+    50 : #edf9f7,
+    100 : #d3efea,
+    200 : #b5e5dd,
+    300 : #97dacf,
+    400 : #81d2c4,
+    500 : #6bcaba,
+    600 : #63c5b3,
+    700 : #58bdab,
+    800 : #4eb7a3,
+    900 : #3cab94,
+    A100 : #fafffe,
+    A200 : #c7fff3,
+    A400 : #94ffe8,
+    A700 : #7affe2,
+    contrast: (
+        50 : $black,
+        100 : $black,
+        200 : $black,
+        300 : $black,
+        400 : $black,
+        500 : $black,
+        600 : $black,
+        700 : $black,
+        800 : $black,
+        900 : $black,
+        A100 : $black,
+        A200 : $black,
+        A400 : $black,
+        A700 : $black,
+    )
+);
+
+$md-vhorange: (
+    50 : #fef1e6,
+    100 : #fcddc0,
+    200 : #fbc697,
+    300 : #f9af6d,
+    400 : #f79e4d,
+    500 : #f68d2e,
+    600 : #f58529,
+    700 : #f37a23,
+    800 : #f2701d,
+    900 : #ef5d12,
+    A100 : $white,
+    A200 : #fff0ea,
+    A400 : #ffcdb7,
+    A700 : #ffbb9d,
+    contrast: (
+        50 : $black,
+        100 : $black,
+        200 : $black,
+        300 : $black,
+        400 : $black,
+        500 : $black,
+        600 : $black,
+        700 : $black,
+        800 : $black,
+        900 : $black,
+        A100 : $black,
+        A200 : $black,
+        A400 : $black,
+        A700 : $black,
+    )
+);
+
+$md-vhdarkblue: (
+    50 : #e5eaeb,
+    100 : #bdc9ce,
+    200 : #92a6ad,
+    300 : #66828c,
+    400 : #456773,
+    500 : #244c5a,
+    600 : #204552,
+    700 : #1b3c48,
+    800 : #16333f,
+    900 : #0d242e,
+    A100 : #6bccff,
+    A200 : #38baff,
+    A400 : #05a8ff,
+    A700 : #0099eb,
+    contrast: (
+        50 : $black,
+        100 : $black,
+        200 : $black,
+        300 : $white,
+        400 : $white,
+        500 : $white,
+        600 : $white,
+        700 : $white,
+        800 : $white,
+        900 : $white,
+        A100 : $black,
+        A200 : $black,
+        A400 : $black,
+        A700 : $white,
+    )
+);
+
+$md-vhteal: (
+    50 : #eaf0ee,
+    100 : #cbd9d4,
+    200 : #a8bfb8,
+    300 : #85a59b,
+    400 : #6a9285,
+    500 : #507f70,
+    600 : #497768,
+    700 : #406c5d,
+    800 : #376253,
+    900 : #274f41,
+    A100 : #97ffd9,
+    A200 : #64ffc6,
+    A400 : #31ffb3,
+    A700 : #18ffaa,
+    contrast: (
+        50 : $black,
+        100 : $black,
+        200 : $black,
+        300 : $black,
+        400 : $black,
+        500 : $white,
+        600 : $white,
+        700 : $white,
+        800 : $white,
+        900 : $white,
+        A100 : $black,
+        A200 : $black,
+        A400 : $black,
+        A700 : $black,
+    )
+);
+
+$md-vhdarkorange: (
+    50 : #f6ebe7,
+    100 : #e8ccc2,
+    200 : #d8aa99,
+    300 : #c88870,
+    400 : #bd6f52,
+    500 : #b15533,
+    600 : #aa4e2e,
+    700 : #a14427,
+    800 : #983b20,
+    900 : #882a14,
+    A100 : #ffc7bd,
+    A200 : #ff9d8a,
+    A400 : #ff7257,
+    A700 : #ff5c3d,
+    contrast: (
+        50 : $black,
+        100 : $black,
+        200 : $black,
+        300 : $black,
+        400 : $black,
+        500 : $white,
+        600 : $white,
+        700 : $white,
+        800 : $white,
+        900 : $white,
+        A100 : $black,
+        A200 : $black,
+        A400 : $black,
+        A700 : $black,
+    )
+);
+
+$md-vhdarkgray: (
+    50 : #eceded,
+    100 : #d0d1d2,
+    200 : #b1b3b5,
+    300 : #929497,
+    400 : #7a7d80,
+    500 : #63666a,
+    600 : #5b5e62,
+    700 : #515357,
+    800 : #47494d,
+    900 : #35383c,
+    A100 : #99b9f8,
+    A200 : #6998f5,
+    A400 : #2c72ff,
+    A700 : #1361ff,
+    contrast: (
+        50 : $black,
+        100 : $black,
+        200 : $black,
+        300 : $black,
+        400 : $white,
+        500 : $white,
+        600 : $white,
+        700 : $white,
+        800 : $white,
+        900 : $white,
+        A100 : $black,
+        A200 : $black,
+        A400 : $white,
+        A700 : $white,
+    )
+);
+
+$md-vhlightgray: (
+    50 : #f6f6f6,
+    100 : #e8e8e8,
+    200 : #d8d9d9,
+    300 : #c8caca,
+    400 : #bdbebe,
+    500 : #b1b3b3,
+    600 : #aaacac,
+    700 : #a1a3a3,
+    800 : #989a9a,
+    900 : #888b8b,
+    A100 : $white,
+    A200 : #edfdfd,
+    A400 : #b8ffff,
+    A700 : #9fffff,
+    contrast: (
+        50 : $black,
+        100 : $black,
+        200 : $black,
+        300 : $black,
+        400 : $black,
+        500 : $black,
+        600 : $black,
+        700 : $black,
+        800 : $black,
+        900 : $black,
+        A100 : $black,
+        A200 : $black,
+        A400 : $black,
+        A700 : $black,
+    )
+);

@@ -7,7 +7,6 @@ import {
 } from '@angular/material';
 import {CommonModule} from '@angular/common';
 
-
 @Component({
   selector: 'theme-picker',
   templateUrl: 'theme-picker.html',
@@ -21,6 +20,12 @@ export class ThemePicker {
 
   themes = [
     {
+      primary: '#007398',
+      accent: '#F68D2E;',
+      href: 'converge.css',
+      isDark: false,
+    },
+    {
       primary: '#673AB7',
       accent: '#FFC107',
       href: 'deeppurple-amber.css',
@@ -31,7 +36,6 @@ export class ThemePicker {
       accent: '#E91E63',
       href: 'indigo-pink.css',
       isDark: false,
-      isDefault: true,
     },
     {
       primary: '#E91E63',
