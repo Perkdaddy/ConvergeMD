@@ -14,7 +14,7 @@ const GUIDES = [
   },
   {
     id: 'theming',
-    name: 'Theming Angular Material',
+    name: 'Theming Converge MD',
     document: '/assets/documents/guides/theming.html',
   },
   {
@@ -24,7 +24,7 @@ const GUIDES = [
   },
   {
     id: 'typography',
-    name: `Using Angular Material's Typography`,
+    name: `Using Converge MD's Typography`,
     document: '/assets/documents/guides/typography.html',
   },
   {

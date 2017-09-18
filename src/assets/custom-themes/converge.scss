@@ -1,11 +1,12 @@
 @import '../../app-theme';
 @import 'colors/color-map';
 
-// Define the light theme.
-$vh-primary: mat-palette($md-vhblue);
-$vh-accent:  mat-palette($mat-orange, A200, A100, A400);
-$vh-warn:    mat-palette($mat-red);
-$vh-app-theme: mat-light-theme($vh-primary, $vh-accent, $vh-warn);
+// Define the Converge light theme.
+$primary: mat-palette($md-vhblue);
+$accent: mat-palette($mat-orange, A200, A100, A400);
+$warn: mat-palette($mat-red);
+
+$vh-app-theme: mat-light-theme($primary, $accent, $warn);
 
 // Include all theme styles for the components.
 @include angular-material-theme($vh-app-theme);

@@ -1,6 +1,8 @@
 // Defines our core color maps
 // Material Design pallets ($md-base-colors-map) is generated off of 7 Verge Health brand colors
+
 @import 'color-constants';
+
 
 // Extend foundation colors
 $primary-color: $blue;
